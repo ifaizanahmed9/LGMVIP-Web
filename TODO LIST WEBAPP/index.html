@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TODO List</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>TODO List</h1>
+      
+      <!-- Input form for adding new task -->
+      <div class="input-wrapper">
+        <input type="text" placeholder="Add Task" id="task" />
+        <button onclick="addTask()">Add</button>
+      </div>
+      
+      <!-- Filter dropdown for filtering tasks -->
+      <div class="filter-wrapper">
+        <label for="filter">Filter:</label>
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
+      
+      <!-- Task list -->
+      <ul class="task-list" id="taskList">
+        <!-- Tasks will be dynamically added here -->
+      </ul>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
